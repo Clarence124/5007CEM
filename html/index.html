@@ -1,0 +1,1295 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <title>Dine Ease</title>
+</head>
+    
+<body>  
+<div class="account"> 
+    <form class="form" id="login">
+        <h1 class="form__title">Login</h1> 
+        <div class="form__message form__message--error"></div>
+        <div class="form__input-group">
+            <input type="text" class="form__input" autofocus placeholder="Username or email">
+            <div class="form__input-error-message"></div>
+        </div> 
+
+            <input type="password" class="form__input" autofocus placeholder="Password">
+            <div class="form__input-error-message"></div>
+
+        <button class="form__button" type="submit">Continue</button>
+        <p class="form__text">
+            <a href="#" class="form__link">Forgot your password?</a>
+        </p>
+        <p class="form__text">
+            <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+        </p>
+    </form>
+    <form class="form" id="createAccount">
+        <h1 class="form__title">Create Account</h1>
+        <div class="form__message form__message--error"></div>
+        <div class="form__input-group">
+            <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+            <div class="form__input-error-message"></div>
+        </div> 
+
+            <input type="text" class="form__input" autofocus placeholder="Email Address">
+            <div class="form__input-error-message"></div>
+
+        <div class="form__input-group">
+            <input type="password" class="form__input" autofocus placeholder="Password">
+            <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+            <input type="password" class="form__input" autofocus placeholder="Confirm password">
+            <div class="form__input-error-message"></div>
+        </div>
+        <button class="form__button" type="submit">Continue</button>
+        <p class="form__text">
+            <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+        </p>
+    </form>
+</div> 
+
+ 
+<div class="homepage"> 
+    <div class="header">
+        <div class="header-left"><img src="pictures/logo.png" width="300" height="150" alt="Logo"></div>
+        <div class="header-right">      
+    	    <ul>  
+                <li><a href="#!">Home</a></li>
+                <li><a href="#!">Reservation</a></li>
+                <li><a href="#!">Menu Card</a></li>
+                <li><a href="#!">Payment</a></li>
+                <li><a href="#!">Account</a></li>
+                <li><a href="#!">Profile</a></li>
+                <li><a href="#!">Log out</a></li>
+            </ul>
+        </div>
+    <div class="header-bottom">     
+    	<div class="header-font">Eat healthy food &amp; Enjoy your life.</div>
+        <div class="p50_0" align="center"> 
+            <a href="#!" class="header-btns">BOOK A TABLE</a>&nbsp; &nbsp; &nbsp; &nbsp;
+        </div> 
+    </div>      
+</div>    
+             
+<div class="book-table-text">BOOK YOUR TABLE NOW.
+    <div class = "card-container"> 
+        <div class = "card-img"><img src="pictures/card-img.jpg"width="200" height="200"padding="10px;"></div>
+        <div class = "card-content">
+            <h3>Reservation</h3>
+            <form> 
+                <div class = "form-row">
+                    <select name = "days">
+                        <option value = "day-select">Select Day</option>
+                        <option value = "sunday">Sunday</option>
+                        <option value = "monday">Monday</option>
+                        <option value = "tuesday">Tuesday</option>
+                        <option value = "wednesday">Wednesday</option>
+                        <option value = "thursday">Thursday</option>
+                        <option value = "friday">Friday</option>
+                        <option value = "saturday">Saturday</option>
+                    </select>
+
+                    <select name = "hours">
+                        <option value = "hour-select">Select Hour</option>
+                        <option value = "10">10: 00</option>
+                        <option value = "10">12: 00</option>
+                        <option value = "10">14: 00</option>
+                        <option value = "10">16: 00</option>
+                        <option value = "10">18: 00</option>
+                        <option value = "10">20: 00</option>
+                        <option value = "10">22: 00</option>
+                    </select>
+                </div>
+
+                <div class = "form-row"> 
+                    <input type = "text" placeholder="Full Name">
+                    <input type = "text" placeholder="Phone Number">
+                </div> 
+
+                <div class = "form-row">
+                    <input type = "number" placeholder="How Many Persons?" min = "1">
+                    <input type = "submit" value = "BOOK TABLE">
+                </div>
+            </form> 
+        </div> 
+    </div>  
+</div>
+    
+<div class="payment">
+    <form action="">
+
+        <div class="row">
+ 
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox"> 
+                    <span>full name :</span>  
+                    <input type="text" placeholder="john deo">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@example.com">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="room - street - locality">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="mumbai">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="india">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" placeholder="123 456">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="pictures/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="mr. john deo">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="january">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="proceed to checkout" class="submit-btn">
+
+    </form>
+
+</div>    
+    
+<div class="update-profile">
+    <div class="card mb-4">
+    <div class="card-header">Account Details</div>
+    <div class="card-body">
+<form>
+
+    <div class="mb-3">
+        <label class="small mb-1" for="inputUsername">Username (how your name will appear to other users on the site)</label>
+        <input class="form-control" id="inputUsername" type="text" placeholder="Enter your username" value="username">
+    </div>
+
+    <div class="row gx-3 mb-3">
+        <div class="col-md-6">
+            <label class="small mb-1" for="inputFirstName">First name</label>
+            <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="Valerie">
+        </div>
+
+        <div class="col-md-6">
+           <label class="small mb-1" for="inputLastName">Last name</label>
+           <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="Luna">
+        </div>
+    </div>
+
+    <div class="row gx-3 mb-3">
+        <div class="col-md-6">
+            <label class="small mb-1" for="inputOrgName">Organization name</label>
+            <input class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" value="Start Bootstrap">
+        </div>
+
+        <div class="col-md-6">
+            <label class="small mb-1" for="inputLocation">Location</label>
+            <input class="form-control" id="inputLocation" type="text" placeholder="Enter your location" value="San Francisco, CA">
+        </div>
+    </div>
+
+        <div class="mb-3">
+            <label class="small mb-1" for="inputEmailAddress">Email address</label>
+            <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="name@example.com">
+        </div>
+
+        <div class="row gx-3 mb-3">
+            <div class="col-md-6">
+                <label class="small mb-1" for="inputPhone">Phone number</label>
+                <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" value="555-123-4567">
+            </div>
+
+            <div class="col-md-6">
+                <label class="small mb-1" for="inputBirthday">Birthday</label>
+                <input class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="Enter your birthday" value="06/10/1988">
+            </div>
+        </div>
+
+        <button class="btn btn-primary" type="button">Save changes</button>
+</form>
+</div>
+</div>
+</div>
+</body>        
+         
+        
+         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
