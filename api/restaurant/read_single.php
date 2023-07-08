@@ -12,8 +12,8 @@ $db = $database->connect();
 // Instantiate reservation object
 $reservation = new reservation($db);
 
-// Get Guest_Number
-$reservation->Guest_Number = isset($_GET['Guest_Number']) ? $_GET['Guest_Number'] : die();
+// Get reservation_id
+$reservation->reservation_id = isset($_GET['reservation_id']) ? $_GET['reservation_id'] : die();
 
 // Get reservation
 $reservation->read_single();
@@ -29,6 +29,7 @@ $reservation_arr = array(
     'table_type' => $reservation->table_type,
     'note' => $reservation->note,
     'placement' => $reservation->placement,
+    'reservation_id' => $reservation->reservation_id,
 );
 
 // Output as JSON
