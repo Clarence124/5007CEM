@@ -26,7 +26,7 @@ if ($num > 0) {
         extract($row);
 
         // Skip empty data
-        if (empty($fname) || empty($lname) || empty($date) || empty($time) || empty($email) || empty($table_type) || empty($note) || empty($placement)) {
+        if (empty($fname) || empty($lname) || empty($date) || empty($time) || empty($email) || empty($table_type) || empty($note) || empty($placement) || empty($reservation_id)) {
             continue;
         }
 
@@ -39,7 +39,8 @@ if ($num > 0) {
             'email' => $email,
             'table_type' => $table_type,
             'note' => $note,
-            'placement' => $placement
+            'placement' => $placement,
+            'reservation_id' => $reservation_id,
         );
 
         array_push($reservation_arr['data'], $booking_item);
