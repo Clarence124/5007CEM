@@ -27,6 +27,8 @@ $reservation->email = $data->email;
 $reservation->table_type = $data->table_type;
 $reservation->note = $data->note;
 $reservation->placement = $data->placement;
+$reservation->reservation_id = $data->reservation_id;
+
 
 // Create reservation
 if ($reservation->create()) {
