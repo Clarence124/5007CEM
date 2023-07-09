@@ -18,12 +18,12 @@ $reservation = new reservation($db);
 $data = json_decode(file_get_contents("php://input"));
 
 // Set which Guest Number to delete
-$reservation->Guest_Number = $data->Guest_Number;
+$reservation->reservation_id = $data->reservation_id;
 
 // Update reservation
 if ($reservation->delete()) {
     echo json_encode(
-        array('message' => 'Reservation deleted', 'Guest_Number' => $reservation->Guest_Number)
+        array('message' => 'Reservation deleted', 'reservation_id' => $reservation->reservation_id)
     );
 } else {
     echo json_encode(
