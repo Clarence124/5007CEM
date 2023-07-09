@@ -19,7 +19,7 @@ $data = json_decode(file_get_contents("php://input"));
 
 // Set Guest Number to update
 $reservation->Guest_Number = $data->Guest_Number;
-
+$reservation->reservation_id = $data->reservation_id;
 $reservation->fname = $data->fname;
 $reservation->lname = $data->lname;
 $reservation->date = $data->date;
